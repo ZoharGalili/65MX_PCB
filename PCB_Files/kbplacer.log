@@ -1,0 +1,392 @@
+INFO: kbplacer_plugin_action.py:70: Plugin version: 0.14
+INFO: kbplacer_plugin_action.py:71: Python version: '3.11.5 (main, Jan 27 2025, 07:08:36) [MSC v.1942 64 bit (AMD64)]'
+INFO: kbplacer_plugin_action.py:72: KiCad version: 9.0.2 with 4.2.2 msw (phoenix) wxWidgets 3.2.6
+INFO: kbplacer_dialog.py:631: Language: en
+INFO: kbplacer_plugin_action.py:80: GUI state: {"layout_path": "C:\\Users\\ZoharGalili\\Documents\\GitHub\\65MX_PCB\\keyboard-layout(65%).json", "key_distance": [19.05, 19.05], "key_info": {"annotation_format": "MX{}", "position_option": "Default", "position": {"x": 0.0, "y": 0.0, "orientation": 0.0, "side": "Front"}, "template_path": ""}, "enable_diode_placement": false, "route_switches_with_diodes": false, "optimize_diodes_orientation": false, "diode_info": {"annotation_format": "D{}", "position_option": "Default", "position": {"x": 5.08, "y": 3.03, "orientation": 90.0, "side": "Back"}, "template_path": ""}, "additional_elements": [{"annotation_format": "ST{}", "position_option": "Custom", "position": {"x": 0.0, "y": 0.0, "orientation": 0.0, "side": "Front"}, "template_path": ""}], "route_rows_and_columns": false, "template_path": "", "generate_outline": false, "outline_delta": 0.0}
+DEBUG: key_placer.py:424: Set key 1U distance: 19050000/19050000
+DEBUG: key_placer.py:141: Switches by nets: defaultdict(<class 'list'>, {frozenset({'ROW4', 'COL10'}): ['MX75', 'MX67'], frozenset({'ROW4', 'COL5'}): ['MX74', 'MX65'], frozenset({'ROW4', 'COL2'}): ['MX73', 'MX64'], frozenset({'COL1', 'ROW4'}): ['MX72', 'MX63'], frozenset({'ROW4', 'COL0'}): ['MX71', 'MX62'], frozenset({'ROW4', 'COL15'}): ['MX70'], frozenset({'ROW4', 'COL13'}): ['MX69'], frozenset({'ROW4', 'COL12'}): ['MX68'], frozenset({'ROW4', 'COL9'}): ['MX66'], frozenset({'COL15', 'ROW3'}): ['MX61'], frozenset({'COL13', 'ROW3'}): ['MX60'], frozenset({'COL12', 'ROW3'}): ['MX59'], frozenset({'COL10', 'ROW3'}): ['MX58'], frozenset({'COL9', 'ROW3'}): ['MX57'], frozenset({'COL8', 'ROW3'}): ['MX56'], frozenset({'COL7', 'ROW3'}): ['MX55'], frozenset({'COL6', 'ROW3'}): ['MX54'], frozenset({'COL5', 'ROW3'}): ['MX53'], frozenset({'COL4', 'ROW3'}): ['MX52'], frozenset({'COL3', 'ROW3'}): ['MX51'], frozenset({'unconnected-(MX50-Pad1)', 'ROW3'}): ['MX50'], frozenset({'unconnected-(D23-K-Pad3)', 'COL2'}): ['MX49'], frozenset({'COL0', 'unconnected-(D23-K-Pad3)'}): ['MX48'], frozenset({'ROW2', 'COL15'}): ['MX47'], frozenset({'ROW2', 'COL13'}): ['MX46'], frozenset({'ROW2', 'COL11'}): ['MX45'], frozenset({'ROW2', 'COL10'}): ['MX44'], frozenset({'ROW2', 'COL9'}): ['MX43'], frozenset({'COL8', 'ROW2'}): ['MX42'], frozenset({'COL7', 'ROW2'}): ['MX41'], frozenset({'ROW2', 'COL6'}): ['MX40'], frozenset({'ROW2', 'COL5'}): ['MX39'], frozenset({'ROW2', 'COL4'}): ['MX38'], frozenset({'ROW2', 'COL3'}): ['MX37'], frozenset({'ROW2', 'COL2'}): ['MX36'], frozenset({'COL1', 'ROW2'}): ['MX35'], frozenset({'COL0', 'ROW2'}): ['MX34', 'MX33'], frozenset({'ROW4', 'COL14'}): ['MX32'], frozenset({'ROW1', 'COL13'}): ['MX31'], frozenset({'ROW1', 'COL12'}): ['MX30'], frozenset({'ROW1', 'COL11'}): ['MX29'], frozenset({'ROW1', 'COL10'}): ['MX28'], frozenset({'ROW1', 'COL9'}): ['MX27'], frozenset({'ROW1', 'COL8'}): ['MX26'], frozenset({'ROW1', 'COL7'}): ['MX25'], frozenset({'ROW1', 'COL6'}): ['MX24'], frozenset({'ROW1', 'COL5'}): ['MX23'], frozenset({'ROW1', 'COL4'}): ['MX22'], frozenset({'ROW1', 'COL3'}): ['MX21'], frozenset({'ROW1', 'COL2'}): ['MX20'], frozenset({'COL1', 'ROW1'}): ['MX19'], frozenset({'ROW1', 'COL0'}): ['MX18'], frozenset({'ROW0', 'COL15'}): ['MX17'], frozenset({'ROW0', 'COL13'}): ['MX16', 'MX1'], frozenset({'ROW0', 'COL12'}): ['MX15'], frozenset({'ROW0', 'COL11'}): ['MX14'], frozenset({'ROW0', 'COL10'}): ['MX13'], frozenset({'ROW0', 'COL9'}): ['MX12'], frozenset({'ROW0', 'COL8'}): ['MX11'], frozenset({'ROW0', 'COL7'}): ['MX10'], frozenset({'ROW0', 'COL6'}): ['MX9'], frozenset({'ROW0', 'COL5'}): ['MX8'], frozenset({'ROW0', 'COL4'}): ['MX7'], frozenset({'ROW0', 'COL3'}): ['MX6'], frozenset({'ROW0', 'COL2'}): ['MX5'], frozenset({'COL1', 'ROW0'}): ['MX4'], frozenset({'ROW0', 'COL0'}): ['MX3'], frozenset({'ROW0', 'COL14'}): ['MX2']})
+DEBUG: key_placer.py:145: Diodes by switch: {'MX70': ['D34'], 'MX32': ['D34'], 'MX69': ['D33'], 'MX68': ['D33'], 'MX75': ['D32'], 'MX67': ['D32'], 'MX66': ['D32'], 'MX74': ['D31'], 'MX73': ['D31'], 'MX65': ['D31'], 'MX64': ['D31'], 'MX72': ['D30'], 'MX71': ['D30'], 'MX63': ['D30'], 'MX62': ['D30'], 'MX61': ['D29'], 'MX60': ['D29'], 'MX59': ['D28'], 'MX58': ['D28'], 'MX57': ['D27'], 'MX56': ['D27'], 'MX55': ['D26'], 'MX54': ['D26'], 'MX53': ['D25'], 'MX52': ['D25'], 'MX51': ['D24'], 'MX50': ['D24'], 'MX49': ['D23'], 'MX48': ['D23'], 'MX47': ['D22'], 'MX46': ['D22'], 'MX45': ['D21'], 'MX44': ['D21'], 'MX43': ['D20'], 'MX42': ['D20'], 'MX41': ['D19'], 'MX40': ['D19'], 'MX39': ['D18'], 'MX38': ['D18'], 'MX37': ['D17'], 'MX36': ['D17'], 'MX35': ['D16'], 'MX34': ['D16'], 'MX33': ['D16'], 'MX31': ['D15'], 'MX30': ['D15'], 'MX29': ['D14'], 'MX28': ['D14'], 'MX27': ['D13'], 'MX26': ['D13'], 'MX25': ['D12'], 'MX24': ['D12'], 'MX23': ['D11'], 'MX22': ['D11'], 'MX21': ['D10'], 'MX20': ['D10'], 'MX19': ['D9'], 'MX18': ['D9'], 'MX17': ['D8'], 'MX2': ['D8'], 'MX16': ['D7'], 'MX15': ['D7'], 'MX1': ['D7'], 'MX14': ['D6'], 'MX13': ['D6'], 'MX12': ['D5'], 'MX11': ['D5'], 'MX10': ['D4'], 'MX9': ['D4'], 'MX8': ['D3'], 'MX7': ['D3'], 'MX6': ['D2'], 'MX5': ['D2'], 'MX4': ['D1'], 'MX3': ['D1']}
+DEBUG: board_modifier.py:73: Searching for MX1 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+INFO: key_placer.py:620: Looking for connection template between MX1 and other elements
+DEBUG: board_modifier.py:107: Getting MX1 footprint position: (-182840000, 26230000)
+INFO: key_placer.py:664: Got connection template: 
+INFO: kle_serial.py:931: User layout: [[{'x': 15, 'c': '#eebbcb', 'a': 7}, '', ''], [{'y': 0.25, 'x': 2, 'c': '#cccccc'}, '', '', '', '', '', '', '', '', '', '', '', '', '', {'c': '#eebbcb', 'w': 2}, '', {'c': '#cccccc'}, ''], [{'x': 2, 'w': 1.5}, '', '', '', '', '', '', '', '', '', '', '', '', '', {'w': 1.5}, '', ''], [{'c': '#bbbcde', 'w': 1.25, 'w2': 1.75, 'l': True}, '', {'x': 0.75, 'w': 1.75}, '', {'c': '#cccccc'}, '', '', '', '', '', '', '', '', '', '', '', {'w': 2.25}, '', ''], [{'x': 2, 'w': 2.25}, '', '', '', '', '', '', '', '', '', '', '', {'w': 1.75}, '', '', ''], [{'x': 2, 'c': '#fff1cf', 'w': 1.25}, '', {'w': 1.25}, '', {'w': 1.25}, '', {'w': 6.25}, '', {'w': 1.25}, '', {'w': 1.25}, '', {'x': 0.5, 'c': '#cccccc'}, '', '', ''], [{'y': 0.25, 'x': 2, 'c': '#fff1cf', 'w': 1.5}, '', '', {'w': 1.5}, '', {'w': 7}, '', {'w': 1.5}, '']]
+DEBUG: key_placer.py:724: Layout offset: (28575000, 28575000)
+DEBUG: kle_serial.py:990: Layout with: x_ortholinear_keys=33, y_ortholinear_keys=2, rotated_keys=0, encoders=0, iso_enters=0 and unrecognized_shape_keys=1
+DEBUG: kle_serial.py:1015: Layout tagged: [<KeyboardTag.ROW_STAGGERED: 2>, <KeyboardTag.WITH_UNRECOGNIZED_KEY_SHAPE: 6>]
+DEBUG: board_modifier.py:94: Setting MX1 footprint position: (323850000, 38100000)
+DEBUG: board_modifier.py:94: Setting MX2 footprint position: (342900000, 38100000)
+DEBUG: board_modifier.py:94: Setting MX3 footprint position: (76200000, 61912500)
+DEBUG: board_modifier.py:94: Setting MX4 footprint position: (95250000, 61912500)
+DEBUG: board_modifier.py:94: Setting MX5 footprint position: (114300000, 61912500)
+DEBUG: board_modifier.py:94: Setting MX6 footprint position: (133350000, 61912500)
+DEBUG: board_modifier.py:94: Setting MX7 footprint position: (152400000, 61912500)
+DEBUG: board_modifier.py:94: Setting MX8 footprint position: (171450000, 61912500)
+DEBUG: board_modifier.py:94: Setting MX9 footprint position: (190500000, 61912500)
+DEBUG: board_modifier.py:94: Setting MX10 footprint position: (209550000, 61912500)
+DEBUG: board_modifier.py:94: Setting MX11 footprint position: (228600000, 61912500)
+DEBUG: board_modifier.py:94: Setting MX12 footprint position: (247650000, 61912500)
+DEBUG: board_modifier.py:94: Setting MX13 footprint position: (266700000, 61912500)
+DEBUG: board_modifier.py:94: Setting MX14 footprint position: (285750000, 61912500)
+DEBUG: board_modifier.py:94: Setting MX15 footprint position: (304800000, 61912500)
+DEBUG: board_modifier.py:94: Setting MX16 footprint position: (333375000, 61912500)
+DEBUG: board_modifier.py:94: Setting MX17 footprint position: (361950000, 61912500)
+DEBUG: board_modifier.py:94: Setting MX18 footprint position: (80962500, 80962500)
+DEBUG: board_modifier.py:94: Setting MX19 footprint position: (104775000, 80962500)
+DEBUG: board_modifier.py:94: Setting MX20 footprint position: (123825000, 80962500)
+DEBUG: board_modifier.py:94: Setting MX21 footprint position: (142875000, 80962500)
+DEBUG: board_modifier.py:94: Setting MX22 footprint position: (161925000, 80962500)
+DEBUG: board_modifier.py:94: Setting MX23 footprint position: (180975000, 80962500)
+DEBUG: board_modifier.py:94: Setting MX24 footprint position: (200025000, 80962500)
+DEBUG: board_modifier.py:94: Setting MX25 footprint position: (219075000, 80962500)
+DEBUG: board_modifier.py:94: Setting MX26 footprint position: (238125000, 80962500)
+DEBUG: board_modifier.py:94: Setting MX27 footprint position: (257175000, 80962500)
+DEBUG: board_modifier.py:94: Setting MX28 footprint position: (276225000, 80962500)
+DEBUG: board_modifier.py:94: Setting MX29 footprint position: (295275000, 80962500)
+DEBUG: board_modifier.py:94: Setting MX30 footprint position: (314325000, 80962500)
+DEBUG: board_modifier.py:94: Setting MX31 footprint position: (338137500, 80962500)
+DEBUG: board_modifier.py:94: Setting MX32 footprint position: (361950000, 80962500)
+DEBUG: board_modifier.py:94: Setting MX33 footprint position: (40481250, 100012500)
+DEBUG: board_modifier.py:94: Setting MX34 footprint position: (83343750, 100012500)
+DEBUG: board_modifier.py:94: Setting MX35 footprint position: (109537500, 100012500)
+DEBUG: board_modifier.py:94: Setting MX36 footprint position: (128587500, 100012500)
+DEBUG: board_modifier.py:94: Setting MX37 footprint position: (147637500, 100012500)
+DEBUG: board_modifier.py:94: Setting MX38 footprint position: (166687500, 100012500)
+DEBUG: board_modifier.py:94: Setting MX39 footprint position: (185737500, 100012500)
+DEBUG: board_modifier.py:94: Setting MX40 footprint position: (204787500, 100012500)
+DEBUG: board_modifier.py:94: Setting MX41 footprint position: (223837500, 100012500)
+DEBUG: board_modifier.py:94: Setting MX42 footprint position: (242887500, 100012500)
+DEBUG: board_modifier.py:94: Setting MX43 footprint position: (261937500, 100012500)
+DEBUG: board_modifier.py:94: Setting MX44 footprint position: (280987500, 100012500)
+DEBUG: board_modifier.py:94: Setting MX45 footprint position: (300037500, 100012500)
+DEBUG: board_modifier.py:94: Setting MX46 footprint position: (330993750, 100012500)
+DEBUG: board_modifier.py:94: Setting MX47 footprint position: (361950000, 100012500)
+DEBUG: board_modifier.py:94: Setting MX48 footprint position: (88106250, 119062500)
+DEBUG: board_modifier.py:94: Setting MX49 footprint position: (119062500, 119062500)
+DEBUG: board_modifier.py:94: Setting MX50 footprint position: (138112500, 119062500)
+DEBUG: board_modifier.py:94: Setting MX51 footprint position: (157162500, 119062500)
+DEBUG: board_modifier.py:94: Setting MX52 footprint position: (176212500, 119062500)
+DEBUG: board_modifier.py:94: Setting MX53 footprint position: (195262500, 119062500)
+DEBUG: board_modifier.py:94: Setting MX54 footprint position: (214312500, 119062500)
+DEBUG: board_modifier.py:94: Setting MX55 footprint position: (233362500, 119062500)
+DEBUG: board_modifier.py:94: Setting MX56 footprint position: (252412500, 119062500)
+DEBUG: board_modifier.py:94: Setting MX57 footprint position: (271462500, 119062500)
+DEBUG: board_modifier.py:94: Setting MX58 footprint position: (290512500, 119062500)
+DEBUG: board_modifier.py:94: Setting MX59 footprint position: (316706250, 119062500)
+DEBUG: board_modifier.py:94: Setting MX60 footprint position: (342900000, 119062500)
+DEBUG: board_modifier.py:94: Setting MX61 footprint position: (361950000, 119062500)
+DEBUG: board_modifier.py:94: Setting MX62 footprint position: (78581250, 138112500)
+DEBUG: board_modifier.py:94: Setting MX63 footprint position: (102393750, 138112500)
+DEBUG: board_modifier.py:94: Setting MX64 footprint position: (126206250, 138112500)
+DEBUG: board_modifier.py:94: Setting MX65 footprint position: (197643750, 138112500)
+DEBUG: board_modifier.py:94: Setting MX66 footprint position: (269081250, 138112500)
+DEBUG: board_modifier.py:94: Setting MX67 footprint position: (292893750, 138112500)
+DEBUG: board_modifier.py:94: Setting MX68 footprint position: (323850000, 138112500)
+DEBUG: board_modifier.py:94: Setting MX69 footprint position: (342900000, 138112500)
+DEBUG: board_modifier.py:94: Setting MX70 footprint position: (361950000, 138112500)
+DEBUG: board_modifier.py:94: Setting MX71 footprint position: (80962500, 161925000)
+DEBUG: board_modifier.py:94: Setting MX72 footprint position: (104775000, 161925000)
+DEBUG: board_modifier.py:94: Setting MX73 footprint position: (128587500, 161925000)
+DEBUG: board_modifier.py:94: Setting MX74 footprint position: (209550000, 161925000)
+DEBUG: board_modifier.py:94: Setting MX75 footprint position: (290512500, 161925000)
+INFO: key_placer.py:1078: Diode info: [ElementInfo(annotation_format='D{}', position_option=<PositionOption.UNCHANGED: 'Unchanged'>, position=ElementPosition(x=5.08, y=3.03, orientation=90.0, side=<Side.BACK: 'Back'>), template_path='')]
+DEBUG: key_placer.py:854: Placing additional elements for MX75
+DEBUG: board_modifier.py:107: Getting MX75 footprint position: (290512500, 161925000)
+DEBUG: board_modifier.py:84: Searching for optional ST75 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX74
+DEBUG: board_modifier.py:107: Getting MX74 footprint position: (209550000, 161925000)
+DEBUG: board_modifier.py:84: Searching for optional ST74 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX73
+DEBUG: board_modifier.py:107: Getting MX73 footprint position: (128587500, 161925000)
+DEBUG: board_modifier.py:84: Searching for optional ST73 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX72
+DEBUG: board_modifier.py:107: Getting MX72 footprint position: (104775000, 161925000)
+DEBUG: board_modifier.py:84: Searching for optional ST72 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX71
+DEBUG: board_modifier.py:107: Getting MX71 footprint position: (80962500, 161925000)
+DEBUG: board_modifier.py:84: Searching for optional ST71 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX70
+DEBUG: board_modifier.py:107: Getting MX70 footprint position: (361950000, 138112500)
+DEBUG: board_modifier.py:84: Searching for optional ST70 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX69
+DEBUG: board_modifier.py:107: Getting MX69 footprint position: (342900000, 138112500)
+DEBUG: board_modifier.py:84: Searching for optional ST69 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX68
+DEBUG: board_modifier.py:107: Getting MX68 footprint position: (323850000, 138112500)
+DEBUG: board_modifier.py:84: Searching for optional ST68 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX67
+DEBUG: board_modifier.py:107: Getting MX67 footprint position: (292893750, 138112500)
+DEBUG: board_modifier.py:84: Searching for optional ST67 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX66
+DEBUG: board_modifier.py:107: Getting MX66 footprint position: (269081250, 138112500)
+DEBUG: board_modifier.py:84: Searching for optional ST66 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX65
+DEBUG: board_modifier.py:107: Getting MX65 footprint position: (197643750, 138112500)
+DEBUG: board_modifier.py:84: Searching for optional ST65 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX64
+DEBUG: board_modifier.py:107: Getting MX64 footprint position: (126206250, 138112500)
+DEBUG: board_modifier.py:84: Searching for optional ST64 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX63
+DEBUG: board_modifier.py:107: Getting MX63 footprint position: (102393750, 138112500)
+DEBUG: board_modifier.py:84: Searching for optional ST63 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX62
+DEBUG: board_modifier.py:107: Getting MX62 footprint position: (78581250, 138112500)
+DEBUG: board_modifier.py:84: Searching for optional ST62 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX61
+DEBUG: board_modifier.py:107: Getting MX61 footprint position: (361950000, 119062500)
+DEBUG: board_modifier.py:84: Searching for optional ST61 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX60
+DEBUG: board_modifier.py:107: Getting MX60 footprint position: (342900000, 119062500)
+DEBUG: board_modifier.py:84: Searching for optional ST60 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX59
+DEBUG: board_modifier.py:107: Getting MX59 footprint position: (316706250, 119062500)
+DEBUG: board_modifier.py:84: Searching for optional ST59 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX58
+DEBUG: board_modifier.py:107: Getting MX58 footprint position: (290512500, 119062500)
+DEBUG: board_modifier.py:84: Searching for optional ST58 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX57
+DEBUG: board_modifier.py:107: Getting MX57 footprint position: (271462500, 119062500)
+DEBUG: board_modifier.py:84: Searching for optional ST57 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX56
+DEBUG: board_modifier.py:107: Getting MX56 footprint position: (252412500, 119062500)
+DEBUG: board_modifier.py:84: Searching for optional ST56 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX55
+DEBUG: board_modifier.py:107: Getting MX55 footprint position: (233362500, 119062500)
+DEBUG: board_modifier.py:84: Searching for optional ST55 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX54
+DEBUG: board_modifier.py:107: Getting MX54 footprint position: (214312500, 119062500)
+DEBUG: board_modifier.py:84: Searching for optional ST54 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX53
+DEBUG: board_modifier.py:107: Getting MX53 footprint position: (195262500, 119062500)
+DEBUG: board_modifier.py:84: Searching for optional ST53 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX52
+DEBUG: board_modifier.py:107: Getting MX52 footprint position: (176212500, 119062500)
+DEBUG: board_modifier.py:84: Searching for optional ST52 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX51
+DEBUG: board_modifier.py:107: Getting MX51 footprint position: (157162500, 119062500)
+DEBUG: board_modifier.py:84: Searching for optional ST51 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX50
+DEBUG: board_modifier.py:107: Getting MX50 footprint position: (138112500, 119062500)
+DEBUG: board_modifier.py:84: Searching for optional ST50 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX49
+DEBUG: board_modifier.py:107: Getting MX49 footprint position: (119062500, 119062500)
+DEBUG: board_modifier.py:84: Searching for optional ST49 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX48
+DEBUG: board_modifier.py:107: Getting MX48 footprint position: (88106250, 119062500)
+DEBUG: board_modifier.py:84: Searching for optional ST48 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX47
+DEBUG: board_modifier.py:107: Getting MX47 footprint position: (361950000, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional ST47 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX46
+DEBUG: board_modifier.py:107: Getting MX46 footprint position: (330993750, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional ST46 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX45
+DEBUG: board_modifier.py:107: Getting MX45 footprint position: (300037500, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional ST45 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX44
+DEBUG: board_modifier.py:107: Getting MX44 footprint position: (280987500, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional ST44 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX43
+DEBUG: board_modifier.py:107: Getting MX43 footprint position: (261937500, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional ST43 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX42
+DEBUG: board_modifier.py:107: Getting MX42 footprint position: (242887500, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional ST42 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX41
+DEBUG: board_modifier.py:107: Getting MX41 footprint position: (223837500, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional ST41 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX40
+DEBUG: board_modifier.py:107: Getting MX40 footprint position: (204787500, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional ST40 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX39
+DEBUG: board_modifier.py:107: Getting MX39 footprint position: (185737500, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional ST39 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX38
+DEBUG: board_modifier.py:107: Getting MX38 footprint position: (166687500, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional ST38 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX37
+DEBUG: board_modifier.py:107: Getting MX37 footprint position: (147637500, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional ST37 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX36
+DEBUG: board_modifier.py:107: Getting MX36 footprint position: (128587500, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional ST36 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX35
+DEBUG: board_modifier.py:107: Getting MX35 footprint position: (109537500, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional ST35 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX34
+DEBUG: board_modifier.py:107: Getting MX34 footprint position: (83343750, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional ST34 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX33
+DEBUG: board_modifier.py:107: Getting MX33 footprint position: (40481250, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional ST33 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX32
+DEBUG: board_modifier.py:107: Getting MX32 footprint position: (361950000, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional ST32 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX31
+DEBUG: board_modifier.py:107: Getting MX31 footprint position: (338137500, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional ST31 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX30
+DEBUG: board_modifier.py:107: Getting MX30 footprint position: (314325000, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional ST30 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX29
+DEBUG: board_modifier.py:107: Getting MX29 footprint position: (295275000, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional ST29 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX28
+DEBUG: board_modifier.py:107: Getting MX28 footprint position: (276225000, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional ST28 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX27
+DEBUG: board_modifier.py:107: Getting MX27 footprint position: (257175000, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional ST27 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX26
+DEBUG: board_modifier.py:107: Getting MX26 footprint position: (238125000, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional ST26 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX25
+DEBUG: board_modifier.py:107: Getting MX25 footprint position: (219075000, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional ST25 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX24
+DEBUG: board_modifier.py:107: Getting MX24 footprint position: (200025000, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional ST24 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX23
+DEBUG: board_modifier.py:107: Getting MX23 footprint position: (180975000, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional ST23 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX22
+DEBUG: board_modifier.py:107: Getting MX22 footprint position: (161925000, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional ST22 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX21
+DEBUG: board_modifier.py:107: Getting MX21 footprint position: (142875000, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional ST21 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX20
+DEBUG: board_modifier.py:107: Getting MX20 footprint position: (123825000, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional ST20 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX19
+DEBUG: board_modifier.py:107: Getting MX19 footprint position: (104775000, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional ST19 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX18
+DEBUG: board_modifier.py:107: Getting MX18 footprint position: (80962500, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional ST18 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX17
+DEBUG: board_modifier.py:107: Getting MX17 footprint position: (361950000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional ST17 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX16
+DEBUG: board_modifier.py:107: Getting MX16 footprint position: (333375000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional ST16 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX15
+DEBUG: board_modifier.py:107: Getting MX15 footprint position: (304800000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional ST15 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX14
+DEBUG: board_modifier.py:107: Getting MX14 footprint position: (285750000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional ST14 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX13
+DEBUG: board_modifier.py:107: Getting MX13 footprint position: (266700000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional ST13 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX12
+DEBUG: board_modifier.py:107: Getting MX12 footprint position: (247650000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional ST12 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX11
+DEBUG: board_modifier.py:107: Getting MX11 footprint position: (228600000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional ST11 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX10
+DEBUG: board_modifier.py:107: Getting MX10 footprint position: (209550000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional ST10 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX9
+DEBUG: board_modifier.py:107: Getting MX9 footprint position: (190500000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional ST9 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX8
+DEBUG: board_modifier.py:107: Getting MX8 footprint position: (171450000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional ST8 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX7
+DEBUG: board_modifier.py:107: Getting MX7 footprint position: (152400000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional ST7 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX6
+DEBUG: board_modifier.py:107: Getting MX6 footprint position: (133350000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional ST6 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX5
+DEBUG: board_modifier.py:107: Getting MX5 footprint position: (114300000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional ST5 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX4
+DEBUG: board_modifier.py:107: Getting MX4 footprint position: (95250000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional ST4 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX3
+DEBUG: board_modifier.py:107: Getting MX3 footprint position: (76200000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional ST3 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX2
+DEBUG: board_modifier.py:107: Getting MX2 footprint position: (342900000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional ST2 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX1
+DEBUG: board_modifier.py:107: Getting MX1 footprint position: (323850000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional ST1 footprint in C:/Users/ZoharGalili/Documents/GitHub/65MX_PCB/PCB_Files/65MX.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
