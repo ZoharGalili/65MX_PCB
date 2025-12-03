@@ -18,7 +18,7 @@ the PCB uses an STM32f072 microcontroller. I have made a keyboard with this micr
 
 ### bakeneko65 and ai03 vega board outline
 
-I coppied the board outline of the bekeneko for supporting a gummy o-ring friction fit mount. I also took the 4 outer plate mounting standoff points from the ai03 vega so i took the board outline as well.
+I coppied the board outline of the bekeneko for supporting a gummy o-ring friction fit mount. I also took the board outline from the ai03 vega so the board can support an internally screwed case. 
 
 ### soldered MX switches
 
